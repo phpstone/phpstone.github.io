@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and frequently asked questions for Film Camera.">
+  <title>Support — Film Camera</title>
+  <style>
+    :root { --paper: #f4efe4; --ink: #26241f; --muted: #716c62; --accent: #b94b32; --line: rgba(38, 36, 31, .14); }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: Georgia, "Times New Roman", serif; }
+    .shell { width: min(760px, calc(100% - 40px)); margin: 0 auto; }
+    header { display: flex; justify-content: space-between; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+    .brand { font-weight: 700; letter-spacing: .14em; text-decoration: none; text-transform: uppercase; }
+    nav { display: flex; gap: 18px; }
+    nav a { color: var(--muted); font: 600 .85rem/1 Arial, sans-serif; text-decoration: none; }
+    nav a:hover { color: var(--accent); }
+    main { padding: 76px 0 100px; }
+    .eyebrow { margin: 0 0 18px; color: var(--accent); font: 700 .75rem/1.2 Arial, sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { margin: 0 0 20px; font-size: clamp(2.8rem, 8vw, 5.2rem); font-weight: 400; letter-spacing: -.04em; line-height: .98; }
+    .intro { margin: 0 0 52px; color: var(--muted); font: 1.05rem/1.7 Arial, sans-serif; }
+    section { padding: 30px 0; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 12px; font-size: 1.35rem; font-weight: 400; }
+    p { margin: 0; color: var(--muted); font: 1rem/1.75 Arial, sans-serif; }
+    a { color: inherit; }
+    .button { display: inline-block; margin-top: 26px; padding: 14px 20px; color: #fff; background: var(--accent); border-radius: 2px; font: 700 .85rem/1 Arial, sans-serif; letter-spacing: .04em; text-decoration: none; }
+    .button:hover { background: #963a27; }
+    footer { padding: 26px 0 34px; color: var(--muted); border-top: 1px solid var(--line); font: .8rem/1.5 Arial, sans-serif; }
+    @media (max-width: 560px) { header { align-items: flex-start; } nav { flex-direction: column; gap: 10px; text-align: right; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="../">Film Camera</a>
+      <nav aria-label="Main navigation"><a href="../">Home</a><a href="../privacy/">Privacy</a></nav>
+    </header>
+    <main>
+      <p class="eyebrow">We're here to help</p>
+      <h1>Support</h1>
+      <p class="intro">Find quick answers below. If you still need help, send us a report with your device model, operating-system version, and a short description of the issue.</p>
+      <section><h2>Why can't I take a photo?</h2><p>Open your device settings and confirm that Film Camera has permission to use the camera.</p></section>
+      <section><h2>Why isn't my photo being saved?</h2><p>Make sure Film Camera has permission to add photos to your library and that your device has enough available storage.</p></section>
+      <section>
+        <h2>How do I report a problem?</h2>
+        <p>Open an issue on GitHub. Please avoid including private photos or other sensitive information in a public report.</p>
+        <a class="button" href="https://github.com/phpstone/phpstone/issues/new">Open a support request</a>
+      </section>
+    </main>
+    <footer>&copy; 2026 Film Camera.</footer>
+  </div>
+</body>
+</html>
